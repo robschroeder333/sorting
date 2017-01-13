@@ -1,10 +1,12 @@
-function swap(first, second, arr, i) {
+var obj = {};
+
+obj.swap = function(first, second, arr, i) {
 	arr[i] = second;
 	arr[i + 1] = first;
 }
 
 
-function bubbleSort(arr) {
+obj.bubbleSort = function(arr) {
   let counter = arr.length - 1;
 	while (counter) {
 	for (let i = 0; i < counter; i++) {
